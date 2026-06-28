@@ -1,0 +1,208 @@
+/* ===========================
+   Experience Section
+=========================== */
+
+.experience-section{
+    padding:80px 0;
+    background:#f5f7fb;
+}
+
+.experience-heading{
+    font-size:42px;
+    font-weight:700;
+    text-align:center;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.section-title{
+    font-size:52px;
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:60px;
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.expertise-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+/* ===========================
+   Web Automation Card
+=========================== */
+
+.web-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #2563eb;
+}
+
+.web-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   API Card
+=========================== */
+
+.api-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #16a34a;
+}
+
+.api-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   Mobile Card
+=========================== */
+
+.mobile-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #9333ea;
+}
+
+.mobile-card:hover{
+    transform:translateY(-8px);
+}
+
+
+/* ===========================
+   Framework Creation Card
+=========================== */
+
+.framework-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #0891b2;
+}
+
+.framework-card:hover{
+    transform:translateY(-8px);
+}
+
+.framework-icon{
+    background:#cffafe;
+    color:#0891b2;
+}
+
+
+/* ===========================
+   DevOps Card
+=========================== */
+
+.devops-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #f97316;
+}
+
+.devops-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   Leadership Card
+=========================== */
+
+.leadership-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #dc2626;
+}
+
+.leadership-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   Common Icon
+=========================== */
+
+.card-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+/* Different icon colors */
+
+.web-icon{
+    background:#e0edff;
+    color:#2563eb;
+}
+
+.api-icon{
+    background:#dcfce7;
+    color:#16a34a;
+}
+
+.mobile-icon{
+    background:#f3e8ff;
+    color:#9333ea;
+}
+
+.devops-icon{
+    background:#ffedd5;
+    color:#f97316;
+}
+
+.leadership-icon{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.card-title{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#222;
+}
+
+/* ===========================
+   List
+=========================== */
+
+.card-list{
+    padding-left:20px;
+}
+
+.card-list li{
+    margin-bottom:12px;
+    line-height:1.7;
+    color:#444;
+}

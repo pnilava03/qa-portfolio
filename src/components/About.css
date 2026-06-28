@@ -1,0 +1,43 @@
+.about-section .about-content {
+    max-width: 1100px;
+    font-size: 22px;
+    line-height: 2;
+    color: #374151;
+    text-align: justify;
+}
+
+
+.about-title{
+    font-size:50px;
+    font-weight:700;
+    color:#1e293b;
+    margin-bottom:35px;
+}
+
+.about-content{
+
+    max-width:1100px;
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:#374151;
+
+    text-align:justify;
+
+}
+
+.about-content p{
+
+    margin-bottom:25px;
+
+}
+
+.about-content strong{
+
+    color:#2563eb;
+
+    font-weight:700;
+
+}
