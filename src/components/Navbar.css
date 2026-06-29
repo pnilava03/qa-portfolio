@@ -12,3 +12,32 @@
 .nav-links a:hover {
   color: #2563eb;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 5%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar h2 {
+    font-size: 28px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 22px;
+    padding-bottom: 8px;
+    white-space: nowrap;
+  }
+
+  .nav-links li {
+    flex: 0 0 auto;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+}

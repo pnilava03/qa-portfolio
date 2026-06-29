@@ -155,3 +155,52 @@
       font-weight:600;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 180px 22px 70px;
+    min-height: auto;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+    line-height: 1.45;
+  }
+
+  .hero p {
+    font-size: 21px;
+    line-height: 1.7;
+  }
+
+  .hero-highlights {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero-highlights span {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    padding: 16px 22px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .hero-video {
+    max-width: 100%;
+  }
+}
