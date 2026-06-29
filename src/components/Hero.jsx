@@ -50,11 +50,10 @@ function Hero() {
 
         <div className="hero-right">
           <div className="hero-video">
-            <iframe
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-              title="Intro Video"
-              allowFullScreen
-            ></iframe>
+            <video controls>
+                  <source src="/videos/Intro_npal.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
           </div>
         </div>
       </div>
