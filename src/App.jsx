@@ -9,6 +9,9 @@ import BugPortfolio from "./components/BugPortfolio";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import WhyHire from "./components/WhyHire";
+import Services from "./components/Services";
+
 import "./index.css";
 
 function App() {
@@ -17,6 +20,8 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <WhyHire />
+      <Services />
       <Experience />
       <Projects />
       <Skills />

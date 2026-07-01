@@ -1,11 +1,12 @@
 import "./Experience.css";
 import {
   FaGlobe,
-  FaPlug,
-  FaMobileAlt,
-  FaCogs,
-  FaUsers,
-  FaLayerGroup,
+    FaPlug,
+    FaMobileAlt,
+    FaCogs,
+    FaUsers,
+    FaLayerGroup,
+    FaReact,
 } from "react-icons/fa";
 
 function Experience() {
@@ -104,6 +105,20 @@ function Experience() {
               <li>Code Reviews</li>
               <li>Agile / Scrum</li>
             </ul>
+          </div>
+          <div className="frontend-card">
+            <div className="card-icon frontend-icon">
+              <FaReact />
+            </div>
+            <h3 className="card-title">React Frontend Development</h3>
+           <ul className="card-list">
+             <li>React + Vite Frontend Development</li>
+             <li>Responsive Desktop & Mobile Web Apps</li>
+             <li>Portfolio & Startup Websites</li>
+             <li>Landing Pages & Product Demo Sites</li>
+             <li>Reusable Component-Based Architecture</li>
+             <li>Vercel Deployment</li>
+           </ul>
           </div>
         </div>
       </div>

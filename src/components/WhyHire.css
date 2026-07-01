@@ -1,0 +1,53 @@
+.why-hire-section {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.why-hire-title {
+  text-align: center;
+  font-size: 48px;
+  color: #1e3a8a;
+  margin-bottom: 14px;
+}
+
+.why-hire-subtitle {
+  max-width: 850px;
+  margin: 0 auto 50px;
+  text-align: center;
+  color: #4b5563;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.why-hire-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.why-hire-card {
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+  border: 1px solid #dbeafe;
+  border-radius: 22px;
+  padding: 30px 24px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.why-hire-card:hover {
+  transform: translateY(-6px);
+  border-color: #2563eb;
+}
+
+.why-hire-card h3 {
+  font-size: 42px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.why-hire-card p {
+  font-size: 18px;
+  color: #111827;
+  font-weight: 600;
+}

@@ -89,12 +89,35 @@ function Skills() {
 
         </div>
 
-        {/* DevOps */}
+        {/* React Frontend */}
+
+        {/* React + Vite */}
 
         <div className="skill-category">
 
-          <h3>⚙️ DevOps & CI/CD</h3>
+          <h3>⚛️ React + Vite Frontend Development</h3>
 
+          <div className="skill-tags">
+            <span>React</span>
+            <span>Vite</span>
+            <span>JavaScript (ES6+)</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Responsive Web Design</span>
+            <span>Component-Based Architecture</span>
+            <span>Portfolio Websites</span>
+            <span>Landing Pages</span>
+            <span>Prototype Web Applications</span>
+            <span>Mobile Browser Optimization</span>
+            <span>Vercel Deployment</span>
+          </div>
+
+        </div>
+
+        {/* DevOps */}
+
+        <div className="skill-category">
+          <h3>⚙️ DevOps & CI/CD</h3>
           <div className="skill-tags">
             <span>Jenkins</span>
             <span>Git</span>
