@@ -101,3 +101,78 @@
     background:#2563eb;
     color:#fff;
 }
+
+/* ===========================
+   Project Action Buttons
+=========================== */
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.project-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 13px 18px;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+/* LIVE MANUAL QA PORTFOLIO */
+
+.project-actions .live-portfolio-btn {
+  background: #facc15;
+  color: #172554;
+}
+
+.project-actions .live-portfolio-btn:hover {
+  background: #eab308;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 18px rgba(234, 179, 8, 0.25);
+}
+
+/* GITHUB */
+
+.project-actions .repository-btn {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.project-actions .repository-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions a {
+    width: 100%;
+  }
+}

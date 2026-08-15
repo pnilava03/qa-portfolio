@@ -1,4 +1,5 @@
 import "./BugPortfolio.css";
+import { links } from "../data/links";
 
 const bugReports = [
   {
@@ -26,7 +27,6 @@ const bugReports = [
 function BugPortfolio() {
   return (
     <section className="bug-section" id="bugs">
-
       <div className="container">
 
         <h2 className="bug-title">
@@ -38,9 +38,7 @@ function BugPortfolio() {
         </p>
 
         <div className="bug-grid">
-
           {bugReports.map((bug) => (
-
             <div className="bug-card" key={bug.title}>
 
               <h3>{bug.title}</h3>
@@ -56,13 +54,45 @@ function BugPortfolio() {
               </a>
 
             </div>
-
           ))}
+        </div>
+
+        {/* MANUAL QA PORTFOLIO CTA */}
+        <div className="bug-portfolio-cta">
+
+          <div className="bug-portfolio-cta-icon">
+            🔍
+          </div>
+
+          <div className="bug-portfolio-cta-content">
+
+            <span className="bug-portfolio-label">
+              GO BEYOND BUG REPORTS
+            </span>
+
+            <h3>
+              Explore My Complete Manual QA Approach
+            </h3>
+
+            <p>
+              See how I approach software quality beyond defect reporting —
+              from requirement and gap analysis to test design, exploratory
+              testing, QA documentation, test coverage, and release readiness.
+            </p>
+
+            <a
+              href={links.manualQAPortfolio}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explore Complete Manual QA Portfolio ↗
+            </a>
+
+          </div>
 
         </div>
 
       </div>
-
     </section>
   );
 }

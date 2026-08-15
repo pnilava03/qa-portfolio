@@ -1,5 +1,13 @@
 import "./Projects.css";
-import { FaGithub, FaBug, FaMobileAlt, FaRobot, FaReact } from "react-icons/fa";
+import { links } from "../data/links";
+import {
+  FaGithub,
+  FaBug,
+  FaMobileAlt,
+  FaRobot,
+  FaReact,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
 
 const projects = [
   {
@@ -16,6 +24,7 @@ const projects = [
       "QA Utility",
     ],
   },
+
   {
     icon: <FaRobot />,
     title: "UI + API Automation Framework",
@@ -30,20 +39,27 @@ const projects = [
       "CI/CD",
     ],
   },
+
   {
     icon: <FaBug />,
     title: "Manual Testing Portfolio & QA Documentation",
-    desc: "Enterprise-level QA portfolio showcasing test strategy, test plans, test cases, exploratory testing, regression testing, bug reports, UAT validation, QA status reports, and release documentation for Web, API, and Mobile applications.",
-    link: "https://github.com/pnilava03/ManualTesting",
+
+    desc:
+      "Explore my dedicated Manual QA portfolio featuring real-world projects, requirement analysis, gap analysis, test scenarios, detailed test cases, exploratory testing, mobile testing, bug reports, test coverage, QA documentation, and practical testing demonstrations.",
+
+    link: links.github,
+
+    liveLink: links.manualQAPortfolio,
     tags: [
-      "Test Strategy",
-      "Test Plans",
+      "Requirement Analysis",
+      "Gap Analysis",
+      "Test Scenarios",
       "Test Cases",
       "Bug Reports",
-      "Regression",
-      "Exploratory",
+      "QA Documentation",
     ],
   },
+
   {
     icon: <FaRobot />,
     title: "AAA Life SDET Automation Framework",
@@ -58,6 +74,7 @@ const projects = [
       "Maven",
     ],
   },
+
   {
     icon: <FaMobileAlt />,
     title: "Mobile Testing",
@@ -71,6 +88,7 @@ const projects = [
       "Real Device",
     ],
   },
+
   {
     icon: <FaReact />,
     title: "React Frontend Development",
@@ -91,7 +109,10 @@ function Projects() {
   return (
     <section className="projects-section" id="projects">
       <div className="container">
-        <h2 className="projects-title">GitHub Projects</h2>
+
+        <h2 className="projects-title">
+          GitHub Projects
+        </h2>
 
         <p className="projects-subtitle">
           Selected QA and frontend repositories covering automation, manual
@@ -99,9 +120,13 @@ function Projects() {
         </p>
 
         <div className="projects-grid">
+
           {projects.map((project) => (
             <div className="project-card" key={project.title}>
-              <div className="project-icon">{project.icon}</div>
+
+              <div className="project-icon">
+                {project.icon}
+              </div>
 
               <h3>{project.title}</h3>
 
@@ -109,15 +134,41 @@ function Projects() {
 
               <ul className="project-tags">
                 {project.tags?.map((tag, index) => (
-                  <li key={index}>{tag}</li>
+                  <li key={index}>
+                    {tag}
+                  </li>
                 ))}
               </ul>
 
-              <a href={project.link} target="_blank" rel="noreferrer">
-                <FaGithub /> View Repository
-              </a>
+              <div className="project-actions">
+
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="live-portfolio-btn"
+                  >
+                    <FaExternalLinkAlt />
+                    View Live QA Portfolio
+                  </a>
+                )}
+
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="repository-btn"
+                >
+                  <FaGithub />
+                  View Repository
+                </a>
+
+              </div>
+
             </div>
           ))}
+
         </div>
       </div>
     </section>

@@ -1,32 +1,44 @@
 import "./Footer.css";
+import { links } from "../data/links";
+
 import {
   FaGithub,
   FaBriefcase,
-  FaEnvelope,
   FaMapMarkerAlt,
+  FaClipboardCheck,
 } from "react-icons/fa";
 
 function Footer() {
   return (
     <footer className="footer">
-
       <div className="container">
 
         <h2>Nilava Pal</h2>
 
         <p className="footer-role">
-          Lead SDET | QA Automation Engineer <br />
-          React + Vite Frontend Developer
+          Senior QA Engineer | Lead SDET <br />
+          Manual QA • Automation • API • Mobile
         </p>
 
         <p className="footer-description">
           Helping SaaS, AI, startups, and enterprise teams deliver
-          high-quality software through Manual Testing, Automation,
-          API Testing, Mobile Testing, and modern React frontend
-          development.
+          high-quality software through requirement analysis, Manual &
+          Exploratory Testing, Automation Testing, API Testing, Mobile
+          Testing, and structured QA practices.
         </p>
 
         <div className="footer-links">
+
+          <a
+            href={links.manualQAPortfolio}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-manual-qa"
+          >
+            <FaClipboardCheck />
+            Manual QA Portfolio ↗
+          </a>
+
           <a
             href="https://github.com/pnilava03"
             target="_blank"
@@ -49,7 +61,13 @@ function Footer() {
 
         <div className="footer-info">
 
-          <span>🕒 Available: 20–40 Hours / Week</span>
+          <span>
+            🕒 Weekly Commitment: 20–40 Hours
+          </span>
+
+          <span>
+            🌍 Timezone: IST (Flexible overlap with US, UK & EU)
+          </span>
 
           <span>
             <FaMapMarkerAlt />
@@ -65,7 +83,6 @@ function Footer() {
         </p>
 
       </div>
-
     </footer>
   );
 }

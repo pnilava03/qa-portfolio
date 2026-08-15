@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Hero.css";
+import { links } from "../data/links";
 
 const achievements = [
   { icon: "🏆", title: "10.5+ Years", text: "Experience" },
@@ -48,6 +49,7 @@ function Hero() {
 
         {/* LEFT SIDE */}
         <div className="hero-left">
+
           <p className="hero-eyebrow">
             Senior QA Engineer • Lead SDET • Manual • Automation • API • Mobile
           </p>
@@ -68,9 +70,25 @@ function Hero() {
             processes.
           </p>
 
+          {/* ACHIEVEMENTS */}
+          <div className="hero-achievements">
+            {achievements.map((item) => (
+              <div className="achievement-card" key={item.text}>
+                <span>{item.icon}</span>
+
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA BUTTONS */}
           <div className="hero-buttons">
+
             <a
-              href="https://qa-portfolio-nil.vercel.app/"
+              href={links.manualQAPortfolio}
               target="_blank"
               rel="noopener noreferrer"
               className="manual-qa-btn"
@@ -95,12 +113,14 @@ function Hero() {
             >
               Hire Me on Upwork
             </a>
+
           </div>
         </div>
 
         {/* RIGHT SIDE */}
         <div className="hero-right">
           <div className="hero-media-card">
+
             <h3>👋 Quick Introduction</h3>
 
             <video controls preload="metadata">
@@ -129,6 +149,7 @@ function Hero() {
                 </button>
               ))}
             </div>
+
           </div>
         </div>
 
@@ -155,9 +176,11 @@ function Hero() {
               <source src={activeVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+
           </div>
         </div>
       )}
+
     </section>
   );
 }

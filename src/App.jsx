@@ -11,7 +11,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhyHire from "./components/WhyHire";
 import Services from "./components/Services";
-
+import FeaturedManualQA from "./components/FeaturedManualQA";
 import "./index.css";
 
 function App() {
