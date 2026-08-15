@@ -117,3 +117,24 @@
     font-size: 17px;
   }
 }
+
+.manual-qa-nav-link {
+  color: #2563eb !important;
+  font-weight: 800 !important;
+}
+
+.manual-qa-nav-link::before {
+  content: "";
+  position: absolute;
+  inset: -8px -12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.manual-qa-nav-link:hover::before {
+  opacity: 1;
+}

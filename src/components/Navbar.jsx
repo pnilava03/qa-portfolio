@@ -12,6 +12,17 @@ function Navbar() {
         <li><a href="#services">Services</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+         <li>
+                  <a
+                    href="https://qa-portfolio-nil.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="manual-qa-nav-link"
+                  >
+                    Manual QA ↗
+                  </a>
+                </li>
+
         <li><a href="#skills">Skills</a></li>
         <li><a href="#bugs">Bugs</a></li>
         <li><a href="#testimonials">Reviews</a></li>

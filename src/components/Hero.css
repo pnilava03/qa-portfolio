@@ -368,3 +368,14 @@ transition:.3s;
 transform:scale(1.03);
 
 }
+
+.manual-qa-btn {
+  background: #ffd54f;
+  color: #061637;
+  border: 2px solid #ffd54f;
+}
+
+.manual-qa-btn:hover {
+  background: #ffca28;
+  color: #061637;
+}

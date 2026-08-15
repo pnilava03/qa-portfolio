@@ -17,7 +17,8 @@ const demoLinks = [
     id: 1,
     icon: "🏗",
     title: "Automation Framework Overview",
-    description: "Scalable Selenium framework architecture and best practices.",
+    description:
+      "Scalable Selenium framework architecture and best practices.",
     video:
       "/videos/demoVideos/Automation_Framework_Overview_And_Structure_Components_And_Best Practices.mp4",
   },
@@ -44,46 +45,60 @@ function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-container">
+
+        {/* LEFT SIDE */}
         <div className="hero-left">
-          <p className="hero-eyebrow">Lead SDET • QA Automation • React</p>
+          <p className="hero-eyebrow">
+            Senior QA Engineer • Lead SDET • Manual • Automation • API • Mobile
+          </p>
 
           <h1>
             Hi, I'm <span>Nilava Pal</span>
           </h1>
 
           <h2>
-            Senior QA Automation Engineer helping teams ship reliable software.
+            Senior QA Engineer helping teams prevent defects and ship reliable
+            software.
           </h2>
 
           <p className="hero-description">
-            I help startups and businesses deliver reliable software through
-            Manual Testing, Automation Testing, API Testing, Mobile Testing, and
-            modern React frontend development.
+            I help SaaS, AI, web, and mobile teams improve software quality
+            through requirement analysis, Manual & Exploratory Testing,
+            Automation Testing, API Testing, Mobile Testing, and structured QA
+            processes.
           </p>
 
-          <div className="hero-achievements">
-            {achievements.map((item) => (
-              <div className="achievement-card" key={item.text}>
-                <span>{item.icon}</span>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
           <div className="hero-buttons">
-            <a href="https://github.com/pnilava03" target="_blank" rel="noreferrer" className="primary-btn">
+            <a
+              href="https://qa-portfolio-nil.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="manual-qa-btn"
+            >
+              🧪 Explore Manual QA Portfolio
+            </a>
+
+            <a
+              href="https://github.com/pnilava03"
+              target="_blank"
+              rel="noreferrer"
+              className="primary-btn"
+            >
               GitHub
             </a>
 
-            <a href="https://www.upwork.com/freelancers/~0171c0df5ee2c6f645" target="_blank" rel="noreferrer" className="secondary-btn">
+            <a
+              href="https://www.upwork.com/freelancers/~0171c0df5ee2c6f645"
+              target="_blank"
+              rel="noreferrer"
+              className="secondary-btn"
+            >
               Hire Me on Upwork
             </a>
           </div>
         </div>
 
+        {/* RIGHT SIDE */}
         <div className="hero-right">
           <div className="hero-media-card">
             <h3>👋 Quick Introduction</h3>
@@ -116,12 +131,23 @@ function Hero() {
             </div>
           </div>
         </div>
+
       </div>
 
+      {/* VIDEO MODAL */}
       {activeVideo && (
-        <div className="video-modal" onClick={() => setActiveVideo(null)}>
-          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-modal" onClick={() => setActiveVideo(null)}>
+        <div
+          className="video-modal"
+          onClick={() => setActiveVideo(null)}
+        >
+          <div
+            className="video-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="close-modal"
+              onClick={() => setActiveVideo(null)}
+            >
               ×
             </button>
 

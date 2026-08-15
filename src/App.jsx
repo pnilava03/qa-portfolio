@@ -21,6 +21,7 @@ function App() {
       <Hero />
       <About />
       <WhyHire />
+      <FeaturedManualQA />
       <Services />
       <Experience />
       <Projects />
