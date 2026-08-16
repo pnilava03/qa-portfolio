@@ -8,7 +8,7 @@ This project also demonstrates my ability to quickly build clean, responsive sta
 
 ## Live Demo
 
-https://qa-portfolio-nil.vercel.app/
+https://www.nilavapalqa.com/
 
 ---
 
@@ -30,6 +30,7 @@ This website was developed to showcase:
 - API Testing
 - Mobile Testing
 - AI Projects
+- Manual QA Portfolio
 - GitHub Projects
 - Contact Information
 
