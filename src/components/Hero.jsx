@@ -97,7 +97,7 @@ function Hero() {
             </a>
 
             <a
-              href="https://github.com/pnilava03"
+              href={links.github}
               target="_blank"
               rel="noreferrer"
               className="primary-btn"
@@ -106,7 +106,7 @@ function Hero() {
             </a>
 
             <a
-              href="https://www.upwork.com/freelancers/~0171c0df5ee2c6f645"
+              href={links.upwork}
               target="_blank"
               rel="noreferrer"
               className="secondary-btn"

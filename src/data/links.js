@@ -1,5 +1,5 @@
 export const links = {
-  manualQAPortfolio: "https://np-manual-qa-portfoilo.vercel.app/",
+  manualQAPortfolio: "https://manual.nilavapalqa.com/",
 
   github: "https://github.com/pnilava03",
 

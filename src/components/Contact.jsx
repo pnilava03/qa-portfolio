@@ -1,6 +1,6 @@
 import "./Contact.css";
 import { FaGithub, FaBriefcase, FaEnvelope } from "react-icons/fa";
-
+import { links } from "../data/links";
 function Contact() {
   return (
     <section id="contact" className="contact">
@@ -29,7 +29,7 @@ function Contact() {
           <div className="availability-links">
 
             <a
-              href="https://www.upwork.com/freelancers/~0171c0df5ee2c6f645"
+             href={links.upwork}
               target="_blank"
               rel="noreferrer"
             >
@@ -38,7 +38,7 @@ function Contact() {
             </a>
 
             <a
-              href="https://github.com/pnilava03"
+              href={links.github}
               target="_blank"
               rel="noreferrer"
             >
