@@ -30,6 +30,7 @@ This website was developed to showcase:
 - API Testing
 - Mobile Testing
 - AI Projects
+- Manual QA Portfolio
 - GitHub Projects
 - Contact Information
 
