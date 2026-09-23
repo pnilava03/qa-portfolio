@@ -3,14 +3,17 @@ import "./Hero.css";
 import { links } from "../data/links";
 
 const achievements = [
-  { icon: "🏆", title: "10.5+ Years", text: "Experience" },
-  { icon: "⭐", title: "100%", text: "Job Success" },
-  { icon: "🌟", title: "3 × 5-Star", text: "Reviews" },
-  { icon: "🚀", title: "18+", text: "GitHub Projects" },
-  { icon: "👥", title: "Led QA Teams", text: "10–15 Members" },
-  { icon: "⚡", title: "60%", text: "Faster Regression" },
-  { icon: "📈", title: "40% → 80%", text: "Automation Coverage" },
-  { icon: "⚛️", title: "React + Vite", text: "Frontend Development" },
+    { icon: "🏆", title: "10.5+ Years", text: "Experience" },
+    { icon: "⭐", title: "100%", text: "Job Success" },
+    { icon: "⬆️", title: "Rising Talent", text: "Upwork Recognition" },
+
+    { icon: "🌟", title: "3 × 5-Star", text: "Reviews" },
+    { icon: "🚀", title: "18+", text: "GitHub Projects" },
+    { icon: "👥", title: "Led QA Teams", text: "10–15 Members" },
+
+    { icon: "⚡", title: "60%", text: "Faster Regression" },
+    { icon: "📈", title: "40% → 80%", text: "Automation Coverage" },
+    { icon: "⚛️", title: "React + Vite", text: "Frontend Development" },
 ];
 
 const demoLinks = [
