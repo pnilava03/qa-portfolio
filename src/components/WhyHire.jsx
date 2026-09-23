@@ -3,6 +3,7 @@ import "./WhyHire.css";
 const highlights = [
   { value: "10.5+", label: "Years QA Experience" },
   { value: "100%", label: "Upwork Job Success" },
+  { value: "Rising Talent", label: "Upwork Recognition" },
   { value: "3", label: "5-Star Reviews" },
   { value: "18+", label: "GitHub Projects" },
   { value: "60%", label: "Regression Time Reduction" },
