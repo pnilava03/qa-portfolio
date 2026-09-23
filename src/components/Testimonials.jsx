@@ -19,7 +19,7 @@ const reviews = [
     rating: "★★★★★",
     short:
       "Built a scalable Selenium automation framework from scratch.",
-    image: review2,
+    image: review3,
   },
   {
     title: "QA Delivery",
@@ -27,7 +27,7 @@ const reviews = [
     rating: "★★★★★",
     short:
       "Delivered excellent work before the deadline.",
-    image: review3,
+    image: review2,
   },
 ];
 
