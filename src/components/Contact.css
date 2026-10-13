@@ -85,3 +85,30 @@
 .availability-text strong{
     color:#111827;
 }
+
+/* Mobile spacing optimization */
+@media (max-width: 768px) {
+    .contact {
+        padding-top: 20px;
+        padding-bottom: 45px;
+        margin-top: 0;
+        min-height: auto;
+    }
+
+    .contact h2 {
+        font-size: 34px;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+
+    .contact-subtitle {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .availability-box {
+        margin: 30px auto;
+        padding: 22px;
+    }
+}

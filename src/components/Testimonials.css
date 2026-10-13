@@ -3,6 +3,20 @@
     background:#f5f7fb;
 }
 
+/* Reduce space below Client Feedback on mobile */
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding-bottom: 15px;
+        margin-bottom: 0;
+        min-height: auto;
+    }
+
+    .testimonials-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}
+
 .testimonials-title{
     text-align:center;
     font-size:48px;
