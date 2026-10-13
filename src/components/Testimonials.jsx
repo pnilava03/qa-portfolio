@@ -3,6 +3,7 @@ import "./Testimonials.css";
 import review1 from "../assets/reviews/review1.png";
 import review2 from "../assets/reviews/review2.png";
 import review3 from "../assets/reviews/review3.png";
+import review4 from "../assets/reviews/review4.png";
 
 const reviews = [
   {
@@ -29,6 +30,14 @@ const reviews = [
       "Delivered excellent work before the deadline.",
     image: review2,
   },
+{
+  title: "Software QA Engineer",
+  client: "Upwork Client",
+  rating: "★★★★★",
+  short:
+    "Skilled and professional QA engineer with excellent attention to detail. Delivered high-quality work on time and communicated effectively.",
+  image: review4,
+},
 ];
 
 function Testimonials() {

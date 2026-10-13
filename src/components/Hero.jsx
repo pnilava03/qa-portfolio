@@ -1,14 +1,15 @@
 import { useState } from "react";
 import "./Hero.css";
 import { links } from "../data/links";
+import topRatedBadge from "../assets/images/TopRatedbadge.png";
 
 const achievements = [
     { icon: "🏆", title: "10.5+ Years", text: "Experience" },
     { icon: "⭐", title: "100%", text: "Job Success" },
-    { icon: "⬆️", title: "Rising Talent", text: "Upwork Recognition" },
+    { icon: topRatedBadge, title: "Top Rated", text: "Upwork Recognition", isImage: true },
 
-    { icon: "🌟", title: "3 × 5-Star", text: "Reviews" },
-    { icon: "🚀", title: "18+", text: "GitHub Projects" },
+    { icon: "🌟", title: "4 × 5-Star", text: "Reviews" },
+    { icon: "🚀", title: "20+", text: "GitHub Projects" },
     { icon: "👥", title: "Led QA Teams", text: "10–15 Members" },
 
     { icon: "⚡", title: "60%", text: "Faster Regression" },
@@ -77,7 +78,13 @@ function Hero() {
           <div className="hero-achievements">
             {achievements.map((item) => (
               <div className="achievement-card" key={item.text}>
-                <span>{item.icon}</span>
+                <span className="achievement-icon">
+                  {item.isImage ? (
+                    <img src={item.icon} alt="Star Badge" className="achievement-badge-img" />
+                  ) : (
+                    item.icon
+                  )}
+                </span>
 
                 <div>
                   <h3>{item.title}</h3>
